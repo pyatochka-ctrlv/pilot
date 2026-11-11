@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Зона турбулентності</title>
+<script>
+  document.documentElement.dataset.mode =
+    new URLSearchParams(location.search).get('mode') === 'remote' ? 'remote' : 'screen';
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Unbounded:wght@700;800&display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/screen.css">
+<link rel="stylesheet" href="css/remote.css">
+</head>
+<body>
+<div id="app"><p class="boot">Завантаження…</p></div>
+<script src="js/common.js"></script>
+<script src="js/store.js"></script>
+<script src="js/trainers.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/screen.js"></script>
+<script src="js/remote.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

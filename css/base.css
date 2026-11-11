@@ -1,0 +1,52 @@
+/* Бренд LetMe/teens — спільне */
+:root {
+  --cobalt: #2B4BF2;
+  --sun: #FFC629;
+  --ink: #14161F;
+  --paper: #F3F4F7;
+  --white: #FFFFFF;
+  --teal: #14998F;
+  --tomato: #F0432E;
+  --tomato-l: #F47B6D;
+  --f-head: 'Unbounded', 'Arial Black', sans-serif;
+  --f-text: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --f-mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  --r: 24px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  font-family: var(--f-text);
+  color: var(--ink);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+button { font: inherit; color: inherit; }
+.mono { font-family: var(--f-mono); text-transform: uppercase; letter-spacing: .03em; }
+.ico { width: 48px; height: 48px; display: block; flex: none; }
+
+/* Жовта плашка зі скосом — для одного ключового слова. Текст завжди Ink. */
+.hl { position: relative; display: inline-block; padding: 0 .2em; color: var(--ink); z-index: 0; }
+.hl::before {
+  content: ''; position: absolute; z-index: -1;
+  left: 0; right: 0; top: .04em; bottom: .02em;
+  background: var(--sun); transform: skewX(-12deg); border-radius: 4px;
+}
+
+/* Стікер-мітка: пігулка з обведенням Ink 3px */
+.pill {
+  display: inline-flex; align-items: center; gap: 10px;
+  border: 3px solid var(--ink); border-radius: 999px;
+  padding: 2px 18px;
+  font-family: var(--f-mono); font-weight: 600; text-transform: uppercase; letter-spacing: .03em;
+  background: var(--white); color: var(--ink); white-space: nowrap;
+}
+.pill-sun { background: var(--sun); }
+
+.tube { position: absolute; pointer-events: none; overflow: visible; }
+
+.boot { padding: 40px; font-size: 20px; }
+.boot-err { max-width: 720px; margin: 60px auto; padding: 32px; background: var(--white); border: 3px solid var(--ink); border-radius: var(--r); font-size: 20px; line-height: 1.45; }
+.boot-err h1 { font-family: var(--f-head); font-size: 28px; margin-bottom: 12px; }
+.boot-err p + p { margin-top: 12px; }

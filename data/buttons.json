@@ -1,0 +1,8 @@
+[
+ {"id":"reset","title":"Перезавантаження","unlocked":true,"hint":"Вдих носом + маленький довдих → довгий видих ротом. 1–3 рази. Коли тебе вже назвали."},
+ {"id":"feet","title":"Стопи-магніти","unlocked":true,"hint":"Втисни стопи в підлогу на 3 секунди → відпусти. Коли стоїш перед класом."},
+ {"id":"square","title":"Квадрат","unlocked":false},
+ {"id":"lemons","title":"Лимони","unlocked":false},
+ {"id":"radar","title":"5-4-3-2-1","unlocked":false},
+ {"id":"switch","title":"Перемкни думку","unlocked":false}
+]
